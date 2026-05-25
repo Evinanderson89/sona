@@ -1,0 +1,22 @@
+{
+  "name": "sona",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A speaking coach that helps you describe videos more evocatively.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "api": "npm --workspace=@sona/api run dev",
+    "mobile": "npm --workspace=@sona/mobile run start",
+    "web": "npm --workspace=@sona/mobile run web",
+    "ios": "npm --workspace=@sona/mobile run ios",
+    "android": "npm --workspace=@sona/mobile run android",
+    "build:shared": "npm --workspace=@sona/shared run build",
+    "typecheck": "npm --workspaces --if-present run typecheck"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

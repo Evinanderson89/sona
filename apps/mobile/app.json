@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Sona",
+    "slug": "sona",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "sona",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0b0d12"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.evinanderson.sona",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Sona records your voice to coach your speaking.",
+        "NSSpeechRecognitionUsageDescription": "Sona transcribes your voice on-device to give feedback."
+      }
+    },
+    "android": {
+      "package": "com.evinanderson.sona",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow Sona to access the microphone."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
