@@ -1,0 +1,16 @@
+node_modules/
+.env
+.env.local
+.usage.json
+.DS_Store
+dist/
+build/
+.expo/
+.expo-shared/
+*.log
+ios/Pods/
+android/.gradle/
+android/build/
+android/app/build/
+.tamagui/
+*.tsbuildinfo
